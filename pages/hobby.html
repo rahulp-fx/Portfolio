@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rahul - Hobbies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: black;
+      color: white;
+      font-family: "Jost", serif;
+      /* font-weight: 400;
+      min-height: 100vh;
+      padding: 40px 20px; */
+    }
+
+        /* Navigation style */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 80px;
+      background-color: rgb(29, 29, 29);
+      font-weight: 500;
+    }
+
+    #pageHighlight {
+      background-color: white;
+      color: black !important;
+      border-radius: 18px;
+      padding: 8px 16px;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .left {
+      font-size: 1.5rem;
+    }
+
+    h1 {
+      color: rgb(248, 175, 38);
+      margin-bottom: 20px;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      padding-bottom: 60px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin: 40px 0 20px;
+      color: rgb(248, 175, 38);
+      border-left: 6px solid rgb(248, 175, 38);
+      padding-left: 12px;
+    }
+
+    .divider {
+      width: 80%;
+      height: 2px;
+      background: rgb(248, 175, 38);
+      margin: 40px auto;
+      border-radius: 10px;
+      opacity: 0.7;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 25px;
+      justify-items: center;
+    }
+
+    .card {
+      background: #1e1e1e;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgb(248, 175, 38, 0.3);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      display: block;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/pages/about.html">About</a></li>
+          <li><a href="/pages/acheivements.html">Achievements</a></li>
+          <li><a href="/pages/hobby.html" id="pageHighlight">Hobbies</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <h1>My Photography & Editing</h1>
+
+      <div class="section-title">Raw Photos</div>
+
+      <div class="grid">
+        <div class="card">
+          <img src="../media/normal/img (1).jpg" alt="Raw Photo 1" />
+        </div>
+        <div class="card">
+          <img src="../media/normal/img (2).jpg" alt="Raw Photo 2" />
+        </div>
+        <div class="card">
+          <img src="../media/normal/img (3).jpg" alt="Raw Photo 3" />
+        </div>
+        <div class="card">
+          <img src="../media/normal/img (4).jpg" alt="Raw Photo 4" />
+        </div>
+        <div class="card">
+          <img src="../media/normal/img (5).jpg" alt="Raw Photo 5" />
+        </div>
+        <div class="card">
+          <img src="../media/normal/img (6).jpg" alt="Raw Photo 6" />
+        </div>
+        <div class="card">
+          <img src="../media/normal/img (7).jpg" alt="Raw Photo 7" />
+        </div>
+        <div class="card">
+          <img src="../media/normal/img (8).jpg" alt="Raw Photo 8" />
+        </div>
+        <div class="card">
+          <img src="../media/normal/img (9).jpg" alt="Raw Photo 9" />
+        </div>
+        <div class="card">
+          <img src="../media/normal/img (10).jpg" alt="Raw Photo 10" />
+        </div>
+        <div class="card">
+          <img src="../media/normal/img (11).jpg" alt="Raw Photo 11" />
+        </div>
+        <div class="card">
+          <img src="../media/normal/img (12).jpg" alt="Raw Photo 12" />
+        </div>
+      </div>
+
+
+      <div class="divider"></div>
+
+      <div class="section-title">Edited Images</div>
+      <div class="grid">
+        <div class="card">
+          <img src="../media/edited/img1.jpg" alt="Edited Image 1" />
+        </div>
+        <div class="card">
+          <img src="../media/edited/img2.jpg" alt="Edited Image 2" />
+        </div>
+        <div class="card">
+          <img src="../media/edited/img3.jpg" alt="Edited Image 3" />
+        </div>
+        <div class="card">
+          <img src="../media/edited/img4.jpg" alt="Edited Image 4" />
+        </div>
+        <div class="card">
+          <img src="../media/edited/img5.jpg" alt="Edited Image 5" />
+        </div>
+        <div class="card">
+          <img src="../media/edited/img6.jpg" alt="Edited Image 6" />
+        </div>
+      </div>
+
+    </section>
+  </main>
+</body>
+
+</html>

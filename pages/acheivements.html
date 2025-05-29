@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <title>Achievements - Rahul</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: black;
+      color: white;
+      font-family: "Jost", serif;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 80px;
+      background-color: rgb(29, 29, 29);
+      font-weight: 500;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    #pageHighlight {
+      background-color: white;
+      color: black !important;
+      border-radius: 18px;
+      padding: 8px 16px;
+    }
+
+    .left {
+      font-size: 1.5rem;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: rgb(248, 175, 38);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin: 40px 0 20px;
+      color: rgb(248, 175, 38);
+      border-left: 6px solid rgb(248, 175, 38);
+      padding-left: 12px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      border: 1px solid rgb(248, 175, 38);
+      border-radius: 15px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+      color: rgb(248, 175, 38);
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #ccc;
+    }
+
+    .divider {
+      margin: 60px auto;
+      height: 3px;
+      background: rgb(248, 175, 38);
+      width: 60%;
+      border-radius: 10px;
+    }
+
+    a.card-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: rgb(248, 175, 38);
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    a.card-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/pages/about.html">About</a></li>
+          <li><a href="/pages/acheivements.html" id="pageHighlight">Achievements</a></li>
+          <li><a href="/pages/hobby.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>My Achievements</h1>
+    <!-- 
+      <div class="section-title">Projects</div>
+      <div class="card-grid">
+        <div class="card">
+          <h3>ImgGallery</h3>
+          <p>A full-featured image sharing web app with upload, like, comment, and download functionality. Built with Vite, JS, and Firebase.</p>
+          <a href="https://github.com/rahulp-fx/ImgGallery" class="card-link" target="_blank">View Project</a>
+        </div>
+        <div class="card">
+          <h3>Movie Tracker App</h3>
+          <p>A personal movie/anime/series tracker with watchlist, rating, and localStorage support. Built with pure JS & minimal design.</p>
+        </div>
+        <div class="card">
+          <h3>Spotify Clone</h3>
+          <p>A custom music streaming UI clone with a simple and ad-free design. Crafted with HTML, CSS, and vanilla JS.</p>
+        </div>
+      </div> -->
+
+    <!-- <div class="divider"></div> -->
+
+    <div class="section-title">Certificates</div>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Internship Certificate (IIT Bombay Collab)</h3>
+        <p>Recognized for outstanding performance during a web development internship in collaboration with IIT Bombay’s
+          Techfest via My Job Grow.</p>
+        <a href="../Certificates/WEB DEV INTERNSHIP/Internship Certificate collaboration with iit bombay.pdf"
+          class="card-link" target="_blank">View Certificate</a>
+      </div>
+
+      <div class="card">
+        <h3>My Job Grow – Web Dev Course</h3>
+        <p>Completed a 15-hour upskilling program in Web Development from My Job Grow in December 2024, including
+          hands-on training and live sessions.</p>
+        <a href="../Certificates/WEB DEV INTERNSHIP/Internship Certificate MyJobGrow.pdf" class="card-link"
+          target="_blank">View Certificate</a>
+      </div>
+
+      <div class="card">
+        <h3>WordPress Website Building</h3>
+        <p>Completed a hands-on project-based training course on building and managing custom WordPress sites.</p>
+        <a href="../Certificates/Wordpress-Course.pdf" class="card-link" target="_blank">View Certificate</a>
+      </div>
+
+      <div class="card">
+        <h3>Hackflix Certificate</h3>
+        <p>Participated in Hackflix event and earned recognition for engagement and contribution in the hackathon
+          challenge.</p>
+        <a href="../Certificates/Hackflix Certificate.jpg" class="card-link" target="_blank">View Certificate</a>
+      </div>
+    </div>
+
+    <!-- <div class="card">
+          <h3>Responsive Web Design</h3>
+          <p>Certified by freeCodeCamp. Covered HTML5, CSS3, Flexbox, Grid, and accessibility.</p>
+          <a href="#" class="card-link">View Certificate</a>
+        </div> -->
+
+
+    <!-- </div> -->
+  </main>
+</body>
+
+</html>
