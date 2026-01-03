@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahul | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+  <!-- Nav -->
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <div class="logo">
+        <div class="logo-box">R</div>
+        RAHUL
+      </div>
+      <div class="nav-links">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#projects" class="nav-link">Work</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link nav-hire">Hire Me</a>
+      </div>
+      <button id="mobile-menu-btn">
+        <i data-lucide="menu"></i> <!--icon injection via lucide library -->
+      </button>
+    </div>
+  </nav>
+
+  <!-- Menu for Mobile -->
+  <div id="mobile-menu">
+    <a href="#home" onclick="toggleMenu()">Home</a>
+    <a href="#projects" onclick="toggleMenu()">Work</a>
+    <a href="#skills" onclick="toggleMenu()">Skills</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+  </div>
+
+  <!-- Herp section -->
+  <section id="home" class="hero">
+    <div class="grid-bg"></div>
+
+    <div class="container hero-content">
+      <div class="reveal">
+        <span class="badge">Available for Projects</span>
+        <h1>Hi, I'm <span>Rahul</span> - Crafting digital experiences through code & composition.</h1>
+        <p>B.Tech CSE Student @ Indus University</p>
+        <div class="btn-group">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#" class="btn btn-outline">
+            Download Resume <i data-lucide="download" style="width: 1rem; height: 1rem;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" style="background-color: var(--bg-alt);">
+    <div class="container">
+      <div class="projects-header">
+        <div class="reveal">
+          <span class="section-tag">Featured Work</span>
+          <h3 class="section-title">Crafting Digital Solutions</h3>
+        </div>
+        <div class="reveal" style="color: var(--text-secondary); max-width: 24rem;">
+          A selection of projects where I focus on UI/UX excellence and clean code fundamentals.
+        </div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="reveal">
+          <div class="glass project-card">
+            <div class="project-img-placeholder">
+              <img src="assets/thumbnail/origin.png" alt="Thumbnail" style="width: 100%; height: 100%;">
+            </div>
+            <h4>
+              ORIGIN
+            </h4>
+            <p>A responsive photography platform featuring a museum-style gallery, user authentication logic, and
+              seamless portfolio management built with HTML, CSS, and JavaScript.</p>
+            <div class="project-tags">
+              <span>UI Design</span>
+              <span>•</span>
+              <span>HTML/CSS/JS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="reveal" style="transition-delay: 100ms;">
+          <div class="glass project-card">
+            <div class="project-img-placeholder">
+              <img src="assets/thumbnail/weather_app.png" alt="Thumbnail" style="width: 120%; height: 100%;">
+            </div>
+            <h4>Weather App</h4>
+            <p>A clean weather application featuring real-time API integration and dynamic visual feedback based on
+              conditions.</p>
+            <div class="project-tags">
+              <span>API Fetch</span>
+              <span>•</span>
+              <span>JS Logic</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- while adding new project - add transition delay (previous project delay + 100ms) -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills section -->
+  <section id="skills">
+    <div class="container">
+      <div class="reveal" style="text-align: center; margin-bottom: 4rem;">
+        <span class="section-tags">Stacks & Tools</span>
+        <h3 class="section-title">My Skills Ecosystem</h3>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Core Tech -->
+        <div class="reveal glass skill-card">
+          <i data-lucide="code-2" class="skill-icon" style="color: var(--accent);"></i>
+          <h4>Core Web</h4>
+          <ul class="skill-list">
+            <li>
+              <div class="skill-dot" style="background: var(--accent);"></div>HTML5 / CSS3
+            </li>
+            <li>
+              <div class="skill-dot" style="background: var(--accent);"></div>JavaScript (ES6+)
+            </li>
+            <li>
+              <div class="skill-dot" style="background: var(--accent);"></div>Flexbox / Grid
+            </li>
+          </ul>
+        </div>
+
+        <!-- Foundations -->
+        <div class="reveal glass skill-card" style="transition-delay:100ms;">
+          <i data-lucide="database" class="skill-icon" style="color: #06b6d4;"></i>
+          <h4>Foundations</h4>
+          <ul class="skill-list">
+            <li>
+              <div class="skill-dot" style="background: #06b6d4;"></div>C / C++
+            </li>
+            <li>
+              <div class="skill-dot" style="background: #06b6d4;"></div>Python Basics
+            </li>
+            <li>
+              <div class="skill-dot" style="background: #06b6d4;"></div>DBMS & SQL
+            </li>
+          </ul>
+        </div>
+
+        <!-- Strategy -->
+        <div class="reveal glass skill-card" style="transition-delay: 200ms;">
+          <i data-lucide="sparkles" class="skill-icon" style="color: #a855f7;"></i>
+          <h4>Design & AI</h4>
+          <ul class="skill-list">
+            <li>
+              <div class="skill-dot" style="background: #a855f7;"></div>UI/UX Design
+            </li>
+            <li>
+              <div class="skill-dot" style="background: #a855f7;"></div>Prompt Engineering
+            </li>
+            <li>
+              <div class="skill-dot" style="background: #a855f7;"></div>Google Certified
+            </li>
+          </ul>
+        </div>
+
+        <!-- Extra -->
+        <div class="reveal glass skill-card" style="transition-delay: 300ms;">
+          <i data-lucide="award" class="skill-icon" style="color: #f59e0b;"></i>
+          <h4>Events</h4>
+          <ul class="skill-list">
+            <li>
+              <div class="skill-dot" style="background: #f59e0b;"></div>GDG DevFest
+            </li>
+            <li>
+              <div class="skill-dot" style="background: #f59e0b;"></div>Scaler Workshop
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Learning Path Banner -->
+  <div class="container">
+    <div class="reveal glass learning-banner">
+      <div class="zap-icon-box">
+        <i data-lucide="zap"></i>
+      </div>
+      <div>
+        <h4 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Fast Learning Path</h4>
+        <p style="color: var(--text-secondary); font-size: 0.875rem;">
+          Currently Learning JavaScript, Understanding how to add functionality.
+        </p>
+      </div>
+      <div class="progress-container">
+        <div class="progress-label">Active Learning</div>
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact" style="background-color: var(--bg-color);">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="reveal">
+          <span class="section-tag">Contact</span>
+          <h3 class="section-title" style="margin-bottom:2rem ;">
+            Let's build something extraordinary together.
+          </h3>
+          <p style="color:var(--text-secondary); margin-bottom: 3rem; max-width: 28rem;">
+            Whether you have a question or just want to say hi, my inbox is always open.
+          </p>
+
+          <div class="contact-info-list">
+            <a href="www.linkedin.com/in/rahul-parmar-735ab632a" class="contact-item">
+              <div class="glass contact-icon">
+                <i data-lucide="linkedin"></i>
+              </div>
+              <span>Linkedin</span>
+            </a>
+            <a href="https://github.com/rahulp-fx" class="contact-item">
+              <div class="glass contact-icon">
+                <i data-lucide="github">
+                </i>
+              </div>
+              <span>Github</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="glass contact-form">
+            <form onsubmit="event.preventDefault()">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">Name</label>
+                  <input type="text" placeholder="Your Name" class="form-input">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Email</label>
+                  <input type="email" placeholder="name@gmail.com" class="form-input">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Message</label>
+                <textarea rows="4" placeholder="How can I help you?" class="form-input"></textarea>
+              </div>
+              <button class="btn btn-primary" style="width: 100%; padding: 1rem; cursor: pointer;">Send
+                Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-copy">
+        &copy; 2026 Rahul. Built with Logic and Vision.
+      </div>
+      <div class="social-links">
+        <a href="#"><i data-lucide="instagram" style="width: 1rem; height: 1rem;"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
