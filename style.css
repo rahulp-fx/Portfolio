@@ -153,14 +153,16 @@ nav {
   overflow: hidden;
 }
 
-  /*pointer-events:none; The element becomes "transparent" to clicks. The mouse "clicks through" it to whatever is underneath*/
+/*pointer-events:none; The element becomes "transparent" to clicks. The mouse "clicks through" it to whatever is underneath*/
 
 .grid-bg {
   position: absolute;
   inset: 0; /*shorthand for top,right,bottom,left*/
   opacity: 0.2;
   pointer-events: none;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.13) 1px,transparent 1px
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.13) 1px,
+    transparent 1px
   );
   background-size: 40px 40px;
 }
@@ -313,6 +315,7 @@ section {
 }
 
 .project-img-placeholder {
+  position: relative;
   aspect-ratio: 16/9;
   border-radius: 0.75rem;
   margin-bottom: 1.5rem;
@@ -321,6 +324,44 @@ section {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+
+/* link-overlay */
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 10, 10, 0.2);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  transform: translateY(101%);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 5;
+}
+
+.project-img-placeholder:hover .project-overlay {
+  transform: translateY(0);
+}
+
+.overlay-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--accent);
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.overlay-link:hover {
+  background: #4f46e5;
+  transform: translateY(-2px);
 }
 
 .project-card h4 {
@@ -354,7 +395,7 @@ section {
 
 @media (min-width: 768px) {
   .skills-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -532,7 +573,7 @@ textarea.form-input {
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(8px);
   display: none;
   align-items: center;
@@ -551,15 +592,15 @@ textarea.form-input {
 
 .modal-icon {
   color: var(--accent);
-  margin-bottom: 1.5rem ;
+  margin-bottom: 1.5rem;
 }
 
-.modal-icon svg{
+.modal-icon svg {
   width: 4rem;
   height: 4rem;
 }
 
-.modal-content h3{
+.modal-content h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
