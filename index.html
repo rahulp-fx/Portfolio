@@ -224,13 +224,13 @@
           </p>
 
           <div class="contact-info-list">
-            <a href="www.linkedin.com/in/rahul-parmar-735ab632a" class="contact-item">
+            <a href="https://www.linkedin.com/in/rahul-parmar-735ab632a" target="_blank" class="contact-item">
               <div class="glass contact-icon">
                 <i data-lucide="linkedin"></i>
               </div>
               <span>Linkedin</span>
             </a>
-            <a href="https://github.com/rahulp-fx" class="contact-item">
+            <a href="https://github.com/rahulp-fx" target="_blank" class="contact-item">
               <div class="glass contact-icon">
                 <i data-lucide="github">
                 </i>
@@ -242,22 +242,22 @@
 
         <div class="reveal">
           <div class="glass contact-form">
-            <form onsubmit="event.preventDefault()">
+            <form action="https://formspree.io/f/mojvpawv" method="post">
               <div class="form-row">
                 <div class="form-group">
                   <label class="form-label">Name</label>
-                  <input type="text" placeholder="Your Name" class="form-input">
+                  <input name="name" type="text" placeholder="Your Name" class="form-input">
                 </div>
                 <div class="form-group">
                   <label class="form-label">Email</label>
-                  <input type="email" placeholder="name@gmail.com" class="form-input">
+                  <input name="email" type="email" placeholder="name@gmail.com" class="form-input">
                 </div>
               </div>
               <div class="form-group">
                 <label class="form-label">Message</label>
-                <textarea rows="4" placeholder="How can I help you?" class="form-input"></textarea>
+                <textarea name="message" rows="4" placeholder="How can I help you?" class="form-input"></textarea>
               </div>
-              <button class="btn btn-primary" style="width: 100%; padding: 1rem; cursor: pointer;">Send
+              <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem; cursor: pointer;">Send
                 Message</button>
             </form>
           </div>
@@ -265,6 +265,34 @@
       </div>
     </div>
   </section>
+
+  <!-- Alert popup -->
+   <!-- success -->
+   <div class="modal-overlay" id="custom-success-modal">
+    <div class="glass modal-content reveal">
+      <div class="modal-icon">
+        <i data-lucide="check-circle"></i>
+      </div>
+      <h3>Message Sent!</h3>
+      <p>Thanks. I'll get back to you as soon as possible.</p>
+      <button onclick="closeModal()" class="btn btn-primary"
+      style="width: 100%; padding: 1rem; cursor: pointer;">Close</button>
+    </div>
+   </div>
+
+   <!-- error -->
+   <div class="modal-overlay" id="custom-error-modal">
+    <div class="glass modal-content reveal">
+      <div class="modal-icon" style="color: red;">
+        <i data-lucide="alert-circle"></i>
+      </div>
+      <h3>Error Occured</h3>
+      <p>Oops! There was a problem submitting your form</p>
+      <button onclick="closeModal()" class="btn btn-primary"
+      style="width: 100%; padding: 1rem; cursor: pointer;">Close</button>
+    </div>
+   </div>
+
 
   <!-- Footer -->
   <footer>

@@ -528,6 +528,48 @@ textarea.form-input {
   resize: none;
 }
 
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(8px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 1.5rem;
+}
+
+.modal-content {
+  max-width: 400px;
+  width: 100%;
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: 2rem;
+}
+
+.modal-icon {
+  color: var(--accent);
+  margin-bottom: 1.5rem ;
+}
+
+.modal-icon svg{
+  width: 4rem;
+  height: 4rem;
+}
+
+.modal-content h3{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.modal-content p {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+}
+
 /* Footer */
 footer {
   padding: 3rem 0;
